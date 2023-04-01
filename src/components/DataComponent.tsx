@@ -47,8 +47,8 @@ const DataComponent = () => {
             </Container>
             <Container className="text-center">
                 <ListGroup>
-                    {data.entries.slice(0, 500).map((entry: any) => (
-                        <ListGroup.Item key={entry} className="text-primary">
+                    {data.entries.slice(0, 500).map((entry: any, index: number) => (
+                        <ListGroup.Item key={index} className="text-primary">
                             {entry.API}
                         </ListGroup.Item>
                     ))}
