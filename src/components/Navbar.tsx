@@ -20,8 +20,9 @@ const NavigationBar = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item href="/books/">Wszystkie książki</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/slowComponent">Lekcja 4</Nav.Link>
-            <Nav.Link href="/data">Lekcja 5</Nav.Link>
+            <Nav.Link href="/customHook">Lekcja 4</Nav.Link>
+            <Nav.Link href="/slowComponent">Lekcja 5</Nav.Link>
+            <Nav.Link href="/data">Lekcja 6</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

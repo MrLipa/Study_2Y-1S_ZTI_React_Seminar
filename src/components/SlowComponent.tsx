@@ -4,15 +4,20 @@ import {useState, useMemo, useEffect} from 'react'
 const SlowComponent = () => {
     const [number, setNumber] = useState(0)
     const [dark, setDark] = useState(false);
-    const doubleNumber = useMemo(()=>{
-        return slowFunction(number)
-    }, [number])
+
+    const doubleNumber = slowFunction(number);
+
+    // const doubleNumber = useMemo(()=>{
+    //     return slowFunction(number)
+    // }, [number])
+
     const themeStyles = useMemo(()=>{
         return {
             backgroundColor: dark ? '#333' : '#CCC',
             color: dark ? '#CCC' : '#333'
         }
     }, [dark])
+    
     useEffect(()=>{
         console.log('Theme Changed');
     }, [themeStyles])

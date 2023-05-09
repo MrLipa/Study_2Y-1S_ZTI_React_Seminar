@@ -9,6 +9,7 @@ import Theme from "./components/Theme";
 import SlowComponent from "./components/SlowComponent";
 import DataComponent from "./components/DataComponent";
 import Missing from "./components/Missing";
+import CustomHook from "./components/CustomHook";
 import { Route, Routes } from "react-router-dom"
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 
@@ -29,6 +30,7 @@ function App() {
               <Route path=":id" element={<Book />} />
             </Route>
             <Route path="/slowComponent" element={<SlowComponent />} />
+            <Route path="/customHook" element={<CustomHook />} />
             <Route path="/data" element={<DataComponent />} />
             <Route path="*" element={<Missing />} />
           </Route>
