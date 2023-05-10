@@ -3,8 +3,8 @@ import useLocalStorage from './useLocalStorage'
 import {useState} from 'react';
 
 const SimpleComponent = () => {
-    const [name, setName] = useLocalStorage('name','')
-    // const [name, setName] = useState('')
+    // const [name, setName] = useLocalStorage('name','')
+    const [name, setName] = useState('')
 
     return (
         <div className="d-flex justify-content-center align-items-center vh-100">

@@ -10,6 +10,7 @@ interface Props{
 const Cities = ({items, color}: Props) => {
     const [selectedIndex, setSelectedIndex] = useState(-1);
     const [alertVisible, setAlertVisible] = useState(false);
+    
     return (
         <>
             <div className="text-center py-2 my-4" style={{fontSize: "2rem"}}>Cities</div>

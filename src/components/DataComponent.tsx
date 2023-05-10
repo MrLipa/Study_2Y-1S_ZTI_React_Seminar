@@ -3,9 +3,6 @@ import { Container, ListGroup } from 'react-bootstrap';
 import {
     useQuery,
     useMutation,
-    useQueryClient,
-    QueryClient,
-    QueryClientProvider,
   } from '@tanstack/react-query'
 
 const DataComponent = () => {

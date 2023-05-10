@@ -7,9 +7,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-   <BrowserRouter>
       <App />
-      <App1 />
-    </BrowserRouter>
   </React.StrictMode>,
 )
+{/* <React.StrictMode>
+<BrowserRouter>
+  <App1 />
+</BrowserRouter>
+</React.StrictMode>, */}
